@@ -19,6 +19,18 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.STRING(10),
       allowNull: false
     },
+    CITY: {
+      type: DataTypes.STRING(10),
+      allowNull: false
+    },
+    PROVINCE: {
+      type: DataTypes.STRING(10),
+      allowNull: false
+    },
+    COUNTRY: {
+      type: DataTypes.STRING(10),
+      allowNull: false
+    },
     HEADIMGURL: {
       type: DataTypes.STRING(1024),
       allowNull: false

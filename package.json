@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "sequelize-auto -o ./entity_model -d 数据库 -h 主机 -u 用户名 -p 端口  -x 密码 -e mysql -a ./src/model/config.json",
+    "build": "sequelize-auto -o ./entity_model -d 数据库 -h 主机IP -u 用户名 -p 端口  -x 密码 -e mysql -a ./src/model/config.json",
     "start": "node ./endpoint.js",
     "dev": "supervisor endpoint.js"
   },
@@ -14,10 +14,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://106.14.77.183/repo/Part/service-mgm"
+    "url": "https://github.com/burning0xb/common-service.git"
   },
   "keywords": [
-    "koa"
+    "rabbitMQ"
   ],
   "author": "wangrui",
   "license": "MIT",

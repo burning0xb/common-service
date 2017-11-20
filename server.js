@@ -1,5 +1,4 @@
 import amqp from 'amqplib/callback_api';
-import Redis from 'ioredis';
 import { logger, logger_date } from './src/log4j';
 import config from './config';
 import route from './route';
@@ -9,13 +8,6 @@ logger.info('server started');
 function bail(err, conn) {
   logger.error(err);
 }
-
-global.redis = new Redis({
-  port: '端口',          // Redis port
-  host: '主机',   // Redis host
-  family: 4,           // 4 (IPv4) or 6 (IPv6)
-  password: '密码'
-});
 
 function on_connect(err, conn) {
     if (err !== null)

@@ -4,9 +4,9 @@
             "category": "console"
         },
         {
-            "category": "log_file",
+            "category": "burnings_log",
             "type": "console",
-            "filename": "./logs/log_file/file.log",
+            "filename": "./logs/burnings_log/file.log",
             "maxLogSize": 104800,
             "backups": 100
         },
@@ -20,7 +20,7 @@
     ],
     "replaceConsole": true,
     "levels": {
-        "log_file": "ALL",
+        "burnings_log": "ALL",
         "console": "ALL",
         "log_date": "ALL"
     }
