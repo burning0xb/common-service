@@ -1,0 +1,52 @@
+{
+  "name": "service-mgm",
+  "version": "1.0.0",
+  "description": "service-mgm",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sequelize-auto -o ./entity_model -d 数据库 -h 主机 -u 用户名 -p 端口  -x 密码 -e mysql -a ./src/model/config.json",
+    "start": "node ./endpoint.js",
+    "dev": "supervisor endpoint.js"
+  },
+  "config": {
+    "NODE_PATH": "./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://106.14.77.183/repo/Part/service-mgm"
+  },
+  "keywords": [
+    "koa"
+  ],
+  "author": "wangrui",
+  "license": "MIT",
+  "dependencies": {
+    "amqplib": "^0.5.1",
+    "async": "^2.1.4",
+    "autobind-decorator": "^1.4.1",
+    "babel-core": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-es2015-node5": "^1.2.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "bluebird": "^3.4.6",
+    "co": "^4.6.0",
+    "co-redis": "^2.1.1",
+    "crypto": "^0.0.3",
+    "hiredis": "^0.5.0",
+    "ioredis": "^3.1.1",
+    "jpush-sdk": "^3.4.2",
+    "koa": "^0.11.x",
+    "koa-router": "^5.4.0",
+    "koa-session": "^3.4.0",
+    "log4js": "^1.1.0",
+    "moment": "^2.18.1",
+    "mysql": "^2.12.0",
+    "redis": "^2.6.3",
+    "sequelize": "^3.28.0",
+    "thunkify": "^2.1.2"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-decorators-legacy": "^1.3.4"
+  }
+}
